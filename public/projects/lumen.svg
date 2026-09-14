@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" rx="28" fill="#eaf6ef"/>
+  <rect x="90" y="110" width="460" height="180" rx="24" fill="white"/>
+  <rect x="120" y="150" width="180" height="16" rx="8" fill="#1aa37a"/>
+  <rect x="120" y="184" width="280" height="12" rx="6" fill="#d7e5dc"/>
+  <rect x="120" y="214" width="220" height="12" rx="6" fill="#d7e5dc"/>
+  <circle cx="500" cy="200" r="38" fill="#16324f"/>
+  <text x="70" y="70" fill="#16324f" font-family="Sora, sans-serif" font-size="28">Lumen Desk</text>
+</svg>
