@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
-  <rect width="640" height="400" rx="28" fill="#e7f1fb"/>
-  <path d="M80 280c80-20 90-120 180-120s90 110 200 90 90-70 100-70" stroke="#2b6cff" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="160" cy="210" r="46" fill="#16324f"/>
-  <circle cx="340" cy="150" r="36" fill="#1aa37a"/>
-  <circle cx="500" cy="210" r="42" fill="#d7b56a"/>
-  <text x="70" y="70" fill="#16324f" font-family="Sora, sans-serif" font-size="28">Atlas Notes</text>
-</svg>

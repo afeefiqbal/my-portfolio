@@ -1,73 +1,133 @@
-import type { Education } from '../types'
+import type { CapabilityGroup, ContactDetail, Education, NavItem } from '../types'
+
+/**
+ * Central portfolio content.
+ * Projects live in ./projects.ts. Stats live in ./site.ts.
+ */
 
 export const profile = {
   name: 'Afeef Iqbal',
   title: 'Full Stack Developer',
-  location: 'Kerala, India',
-  email: 'hello@afeefiqbal.dev',
-  phone: '+91 90000 00000',
-  availability: 'Open to remote and hybrid roles',
-  headline: 'I design and build calm, precise product experiences for the web.',
-  summary:
-    'I am a full stack developer who cares about the space between a sketch and a shipped product. I like systems that stay readable, interfaces that feel inevitable, and tools that disappear once they work. This map is a tour of how I got here and where the road is heading next.',
-  focus: ['Product engineering', 'Interface systems', 'API design', 'Performance'],
-  links: {
-    github: 'https://github.com/afeefiqbal',
-    linkedin: 'https://www.linkedin.com/in/afeefiqbal',
-    website: 'https://afeefiqbal.dev',
-  },
-  facts: [
-    { label: 'Based in', value: 'Kerala, India' },
-    { label: 'Building', value: 'Web products end to end' },
-    { label: 'Currently', value: 'Open to thoughtful teams' },
-    { label: 'Likes', value: 'Quiet UI, honest architecture' },
-  ],
+  positioning: 'AI-powered web & software development',
+  location: 'Kochi, Kerala, India',
+  email: 'afeefbinqbal@gmail.com',
+  phone: '+91 73560 66287',
+  phoneHref: 'tel:+917356066287',
+  availability: 'Available for work',
+  openTo: ['Full-time', 'Freelance', 'Remote'],
+  eyebrow: 'Turning ideas into reality',
+  heroLines: ['Full Stack', 'Developer'],
+  heroCopy:
+    'I design, build and deploy modern digital products — from full-stack web applications and business platforms to AI-powered tools and automation. Available for freelance web development projects and full-time roles.',
+  heroCaps: ['Full stack', 'AI development', 'Web applications', 'API & automation'],
+  aboutStatement: ['Engineering digital', 'experiences with', 'purpose.'],
   aboutBody: [
-    'I work across the stack, but I start from the user. If a flow is confusing, no amount of clever code will save it. If a system is unclear, the interface will eventually lie.',
-    'Most of my days sit between React interfaces, typed APIs, and the small details that make software feel considered: motion, empty states, copy, and the way a page recovers from failure.',
-    'Outside of shipping, I sketch product ideas, study spatial interfaces, and look for calmer ways to present complex work. This portfolio is one of those experiments.',
+    'I am a full stack developer based in Kochi, Kerala. I work across the stack: frontend interfaces, backend services, APIs, and databases — then I ship them. WordPress and CMS work when the product needs an editorial system; custom applications when it needs its own architecture.',
+    'I also build AI-powered features into real products: API integrations, automated workflows, and tools that sit on top of working web applications rather than existing as demos.',
+    'The through-line is the same. Understand the problem, design the system, implement it carefully, and deploy something people can use. That includes freelance web application development, custom WordPress and CMS work, and AI-powered application development and integration.',
   ],
+  focus: 'Full stack · AI-powered web',
+  links: {
+    linkedin: 'https://www.linkedin.com/in/afeef-iqbal',
+    website: 'https://linktr.ee/iafeef',
+  },
+  /**
+   * Portrait image. Drop your photo at public/portrait.jpg (roughly 3:4 crop).
+   * If the file is missing, a minimal editorial placeholder renders instead.
+   */
+  portrait: '/portrait.jpg',
 }
 
-export const education: Education[] = [
+export const navItems: NavItem[] = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'work', label: 'Work' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'capabilities', label: 'Capabilities' },
+  { id: 'contact', label: 'Contact' },
+]
+
+export const selectedWork = {
+  heading: ['Selected', 'Work'],
+  intro: 'Real products I have designed, built and deployed — with more in development.',
+}
+
+export const whatIBuild: string[] = [
+  'Custom Web Applications',
+  'SaaS Platforms',
+  'AI-Powered Applications',
+  'Business Websites',
+  'E-commerce',
+  'WordPress / CMS',
+  'REST APIs',
+  'Automation Systems',
+  'Dashboards',
+  'Interactive Web Experiences',
+]
+
+export const capabilityGroups: CapabilityGroup[] = [
   {
-    id: 'btech',
-    school: 'University Institute of Engineering',
-    program: 'B.Tech in Computer Science',
-    period: '2018 — 2022',
-    details:
-      'Focused on software engineering, databases, and human-computer interaction. Final-year project explored realtime collaboration on the web.',
+    id: 'frontend',
+    label: 'Frontend',
+    items: ['React', 'TypeScript', 'JavaScript', 'Vue', 'HTML', 'CSS'],
   },
   {
-    id: 'minor',
-    school: 'Independent study',
-    program: 'Product design and systems thinking',
-    period: '2022 — present',
-    details:
-      'Ongoing practice in interface architecture, design systems, and the craft of shipping maintainable full stack software.',
+    id: 'backend',
+    label: 'Backend',
+    items: ['Node.js', 'PHP', 'Laravel', 'REST APIs'],
+  },
+  {
+    id: 'ai',
+    label: 'AI',
+    items: [
+      'AI Application Development',
+      'AI API Integration',
+      'AI Agents',
+      'Automation',
+    ],
+  },
+  {
+    id: 'cms',
+    label: 'CMS',
+    items: ['WordPress', 'CMS Development'],
+  },
+  {
+    id: 'database',
+    label: 'Database',
+    items: ['MySQL', 'SQL', 'Database Architecture'],
+  },
+  {
+    id: 'creative',
+    label: 'Creative',
+    items: ['Three.js', 'WebGL'],
   },
 ]
 
-export const future = {
-  title: "What's next?",
-  intro:
-    'The path does not end at contact. These are the directions I am actively walking toward.',
-  goals: [
-    {
-      title: 'Deeper product ownership',
-      copy: 'Work where engineering, design, and narrative sit in the same room from the first sketch.',
-    },
-    {
-      title: 'Spatial and map-like interfaces',
-      copy: 'Keep exploring how people find their way through complex information without feeling lost.',
-    },
-    {
-      title: 'Craft at scale',
-      copy: 'Build systems that stay elegant after the fifth team and the fiftieth feature.',
-    },
-    {
-      title: 'Teaching in public',
-      copy: 'Write and speak more about the quiet decisions that make software feel finished.',
-    },
-  ],
+export const education: Education[] = [
+  {
+    id: 'jdt',
+    school: 'JDT Islam Polytechnic College',
+    program: 'Diploma in Computer Software Engineering',
+    period: '2014 — 2017',
+  },
+]
+
+export const hiring = {
+  heading: 'Looking for a developer?',
+  copy: 'Available for freelance web development projects, as well as full-time, remote, and contract roles.',
+  available: ['Full-time', 'Freelance', 'Remote', 'Contract'],
 }
+
+export const contact = {
+  heading: ["Let's build", 'something', 'great.'],
+  prompt: 'Have a project in mind?',
+  copy: 'I build websites, web applications, AI-powered products and custom digital platforms. Available for full-stack web application development, AI-powered application development and integration, and custom WordPress and CMS development.',
+  cta: 'Start a project',
+}
+
+export const contactDetails: ContactDetail[] = [
+  { label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
+  { label: 'LinkedIn', value: 'linkedin.com/in/afeef-iqbal', href: profile.links.linkedin },
+  { label: 'Phone', value: profile.phone, href: profile.phoneHref },
+  { label: 'Location', value: profile.location },
+]

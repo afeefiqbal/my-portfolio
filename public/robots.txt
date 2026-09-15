@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /projects/
+Allow: /projects/*
+
+Sitemap: https://afeefiqbal.com/sitemap.xml

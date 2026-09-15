@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
-  <rect width="640" height="400" rx="28" fill="#f7f1e6"/>
-  <path d="M140 280 V140 h80 v140 M280 280 V100 h80 v180 M420 280 V170 h80 v110" stroke="#d9892b" stroke-width="18"/>
-  <text x="70" y="70" fill="#16324f" font-family="Sora, sans-serif" font-size="28">Harbor</text>
-</svg>
