@@ -8,6 +8,9 @@ import { downloadResume } from '../lib/resume'
 const HeroCanvas = lazy(() =>
   import('./HeroCanvas').then((m) => ({ default: m.HeroCanvas })),
 )
+const RobotCompanion = lazy(() =>
+  import('./RobotCompanion').then((m) => ({ default: m.RobotCompanion })),
+)
 
 function Portrait() {
   const [missing, setMissing] = useState(false)
@@ -114,6 +117,9 @@ export function Hero() {
     <section id="home" className="hero" ref={rootRef}>
       <Suspense fallback={null}>
         <HeroCanvas />
+      </Suspense>
+      <Suspense fallback={null}>
+        <RobotCompanion heroRef={rootRef} />
       </Suspense>
 
       <div className="hero-layout">
